@@ -1,0 +1,167 @@
+* {
+    scroll-behavior: smooth;
+}
+
+
+body{
+   background-color: #877da5;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.moon-cycle{
+    height: 50px;
+    border-radius: 100px;
+    display: block;
+    margin: auto;
+}
+
+
+.kontakt-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.me{
+    height: 100px;
+    border-radius: 30px;
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;   
+}
+
+
+a {
+    color: #3a334b;
+    text-decoration: none;   
+}
+
+
+.navbar {
+    list-style-type: none;
+   position: fixed;
+    background:#877da5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 12px 0;
+}
+
+
+.icon::after{
+    content: attr(data-name);
+    position: absolute;
+    top: -20px;
+    opacity: 0;
+}
+
+.icon:hover::after {
+opacity: 1;
+}
+
+
+h3, h5, h6, p{
+    display: flex;
+    justify-content: center;
+    color:#dcd7d5;
+}
+
+
+h3{
+    margin-top: 50px;
+} 
+
+/*kenntnisse page*/
+
+.language{
+    list-style-type: none;
+    color: #dcd7d5;
+   text-align: center;    
+}
+
+/*hoby page*/
+
+
+.hobby-text{
+   list-style-type: none;
+   color:#dcd7d5;
+   text-align: center;
+   line-height: 40px;
+   display: block;
+   position: relative;
+   margin: 10px 0;   
+}
+
+
+.hobby-text::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    opacity: 0;
+    transition: .3s;
+    pointer-events:none ;
+}
+
+
+
+
+.hobby-text:hover::after{ opacity: 1; right: 0;}
+
+.one::after{ background-image: url(dear.jpeg);}
+
+.two::after{ background-image: url(books.jpg);}
+
+.three::after{background-image: url(music.jpg);}
+
+.four::after{background-image: url(writing.jpg);}
+
+.five::after{background-image: url(anime.jpg);}
+
+.six::after{background-image: url(natur.jpg);}
+
+
+
+/*kontakt page*/
+
+
+.fourth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    gap:40px;
+}
+
+
+.kontakt-icon{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding: 20px;
+    width: 220px;
+    gap: 40px;
+    font-size:xxx-large;
+    background:#dcd7d5;
+    border-radius: 50px;
+}
+
+
+.kontakt-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
